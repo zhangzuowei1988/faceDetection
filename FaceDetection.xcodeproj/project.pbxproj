@@ -15,6 +15,11 @@
 		04563BB12101A5C7002F5974 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04563BB02101A5C7002F5974 /* main.m */; };
 		04563BBB2101A5C7002F5974 /* FaceDetectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04563BBA2101A5C7002F5974 /* FaceDetectionTests.m */; };
 		04563BC62101A5C7002F5974 /* FaceDetectionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04563BC52101A5C7002F5974 /* FaceDetectionUITests.m */; };
+		04563BD52101A695002F5974 /* FaceDetectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04563BD42101A695002F5974 /* FaceDetectView.m */; };
+		04563BD82101A9C5002F5974 /* FaceImageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04563BD72101A9C5002F5974 /* FaceImageTool.m */; };
+		04563BDB2101AF51002F5974 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04563BDA2101AF51002F5974 /* RegisterViewController.m */; };
+		04563BDE2101AF61002F5974 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04563BDD2101AF61002F5974 /* LoginViewController.m */; };
+		04563BE52101CAD6002F5974 /* CalculateImageSimilarity.m in Sources */ = {isa = PBXBuildFile; fileRef = 04563BE42101CAD6002F5974 /* CalculateImageSimilarity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,16 @@
 		04563BC12101A5C7002F5974 /* FaceDetectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceDetectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04563BC52101A5C7002F5974 /* FaceDetectionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceDetectionUITests.m; sourceTree = "<group>"; };
 		04563BC72101A5C7002F5974 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04563BD32101A695002F5974 /* FaceDetectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceDetectView.h; sourceTree = "<group>"; };
+		04563BD42101A695002F5974 /* FaceDetectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceDetectView.m; sourceTree = "<group>"; };
+		04563BD62101A9C5002F5974 /* FaceImageTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceImageTool.h; sourceTree = "<group>"; };
+		04563BD72101A9C5002F5974 /* FaceImageTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceImageTool.m; sourceTree = "<group>"; };
+		04563BD92101AF51002F5974 /* RegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		04563BDA2101AF51002F5974 /* RegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		04563BDC2101AF61002F5974 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		04563BDD2101AF61002F5974 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		04563BE32101CAD6002F5974 /* CalculateImageSimilarity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculateImageSimilarity.h; sourceTree = "<group>"; };
+		04563BE42101CAD6002F5974 /* CalculateImageSimilarity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculateImageSimilarity.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +116,15 @@
 		04563BA02101A5C5002F5974 /* FaceDetection */ = {
 			isa = PBXGroup;
 			children = (
+				04563BE22101CA07002F5974 /* FaceDetect */,
 				04563BA12101A5C5002F5974 /* AppDelegate.h */,
 				04563BA22101A5C5002F5974 /* AppDelegate.m */,
 				04563BA42101A5C6002F5974 /* ViewController.h */,
 				04563BA52101A5C6002F5974 /* ViewController.m */,
+				04563BD92101AF51002F5974 /* RegisterViewController.h */,
+				04563BDA2101AF51002F5974 /* RegisterViewController.m */,
+				04563BDC2101AF61002F5974 /* LoginViewController.h */,
+				04563BDD2101AF61002F5974 /* LoginViewController.m */,
 				04563BA72101A5C6002F5974 /* Main.storyboard */,
 				04563BAA2101A5C7002F5974 /* Assets.xcassets */,
 				04563BAC2101A5C7002F5974 /* LaunchScreen.storyboard */,
@@ -130,6 +150,19 @@
 				04563BC72101A5C7002F5974 /* Info.plist */,
 			);
 			path = FaceDetectionUITests;
+			sourceTree = "<group>";
+		};
+		04563BE22101CA07002F5974 /* FaceDetect */ = {
+			isa = PBXGroup;
+			children = (
+				04563BD32101A695002F5974 /* FaceDetectView.h */,
+				04563BD42101A695002F5974 /* FaceDetectView.m */,
+				04563BD62101A9C5002F5974 /* FaceImageTool.h */,
+				04563BD72101A9C5002F5974 /* FaceImageTool.m */,
+				04563BE32101CAD6002F5974 /* CalculateImageSimilarity.h */,
+				04563BE42101CAD6002F5974 /* CalculateImageSimilarity.m */,
+			);
+			path = FaceDetect;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +296,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				04563BA62101A5C6002F5974 /* ViewController.m in Sources */,
+				04563BDB2101AF51002F5974 /* RegisterViewController.m in Sources */,
 				04563BB12101A5C7002F5974 /* main.m in Sources */,
+				04563BD52101A695002F5974 /* FaceDetectView.m in Sources */,
+				04563BDE2101AF61002F5974 /* LoginViewController.m in Sources */,
+				04563BD82101A9C5002F5974 /* FaceImageTool.m in Sources */,
+				04563BE52101CAD6002F5974 /* CalculateImageSimilarity.m in Sources */,
 				04563BA32101A5C5002F5974 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,12 +472,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D97PG3AW4E;
 				INFOPLIST_FILE = FaceDetection/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = zhang.FaceDetection;
+				PRODUCT_BUNDLE_IDENTIFIER = zhang.iuj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -450,12 +490,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D97PG3AW4E;
 				INFOPLIST_FILE = FaceDetection/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = zhang.FaceDetection;
+				PRODUCT_BUNDLE_IDENTIFIER = zhang.iuj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

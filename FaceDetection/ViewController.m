@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import "LoginViewController.h"
+#import "RegisterViewController.h"
 @interface ViewController ()
 
 @end
@@ -18,7 +19,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
+- (IBAction)registerButtonClicked:(id)sender {
+    RegisterViewController *registerVC = [[RegisterViewController alloc]init];
+    [self.navigationController pushViewController:registerVC animated:YES];
+}
 
+- (IBAction)loginButtonClicked:(id)sender {
+    LoginViewController *LoginVC = [[LoginViewController alloc]init];
+    [self.navigationController pushViewController:LoginVC animated:YES];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
